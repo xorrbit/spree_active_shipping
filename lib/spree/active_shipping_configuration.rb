@@ -25,5 +25,8 @@ class Spree::ActiveShippingConfiguration < Spree::Preferences::Configuration
   preference :handling_fee, :integer
   preference :max_weight_per_package, :integer, :default => 0 # 0 means no limit
 
+  preference :canada_post_pws_api_key, :string, :default => ""
+  preference :canada_post_pws_secret, :string, :default => ""
+
   preference :test_mode, :boolean, :default => false
 end
