@@ -84,6 +84,18 @@
       <%= form.label(:test_mode, "Test Mode: ") + tag(:br) %>
       <%= preference_field_tag(:test_mode,  @config[:test_mode], :type => :boolean) %>
     <% end %>
+    <%= form.field_container :canada_post_pws_customer_number do %>
+      <%= form.label(:canada_post_pws_customer_number, "Canada Post PWS Customer Number: ") + tag(:br) %>
+      <%= preference_field_tag(:canada_post_pws_customer_number,  @config[:canada_post_pws_customer_number], :type => :string) %>
+    <% end %>
+    <%= form.field_container :canada_post_pws_api_key do %>
+      <%= form.label(:canada_post_pws_api_key, "Canada Post PWS API Key (Username): ") + tag(:br) %>
+      <%= preference_field_tag(:canada_post_pws_api_key,  @config[:canada_post_pws_api_key], :type => :string) %>
+    <% end %>
+    <%= form.field_container :canada_post_pws_secret do %>
+      <%= form.label(:canada_post_pws_secret, "Canda Post PWS Secret (Password): ") + tag(:br) %>
+      <%= preference_field_tag(:canada_post_pws_secret,  @config[:canada_post_pws_secret], :type => :string) %>
+    <% end %>
   </fieldset>
   <p class="form-buttons">
     <%= button t('update') %>

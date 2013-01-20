@@ -58,5 +58,5 @@ en:
     parcel_surface: "Canada Post Parcel Surface"
     small_packets_surface: "Canada Post Small Packets Surface"
   canada_post_pws:
-    regular: "Canada Post Regular"
+    regular: "Regular Parcel"
   shipping_error: "Shipping Error"

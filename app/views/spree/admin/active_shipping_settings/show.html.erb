@@ -115,5 +115,18 @@
     <td><%= @config[:canada_post_login] %></td>
   </tr>
 </table>
-
+<table>
+  <tr>
+    <td>Canada Post PWS Customer ID:</td>
+    <td><%= @config[:canada_post_pws_customer_number] %></td>
+  </tr>
+  <tr>
+    <td>Canada Post PWS API Key (Username):</td>
+    <td><%= @config[:canada_post_pws_api_key] %>
+  </tr>
+  <tr>
+    <td>Canda Post PWS Secret (Password):</td>
+    <td><%= @config[:canada_post_pws_secret] %>
+  </tr>
+</table>
 <p><%= link_to_with_icon 'edit', t("edit"), edit_admin_active_shipping_settings_path %></p>
