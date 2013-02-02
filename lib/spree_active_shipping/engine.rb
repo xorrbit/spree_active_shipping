@@ -36,8 +36,8 @@ module SpreeActiveShippingExtension
         Spree::Calculator::Fedex::Base.descendants +
         Spree::Calculator::Ups::Base.descendants +
         Spree::Calculator::Usps::Base.descendants +
-	Spree::Calculator::CanadaPost::Base.descendants +
-	Spree::Calculator::CanadaPostPWS::Base.descendants
+        #Spree::Calculator::CanadaPost::Base.descendants +
+        Spree::Calculator::CanadaPostPWS::Base.descendants
       )
     end
   end
