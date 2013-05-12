@@ -4,7 +4,7 @@ module Spree
   class Calculator < ActiveRecord::Base
     module CanadaPostPWS
       class Base < Spree::Calculator::ActiveShipping::Base
-	@customer_number = ""
+        @customer_number = ""
 
         def carrier
           @customer_number = Spree::ActiveShipping::Config[:canada_post_pws_customer_number]
@@ -13,12 +13,12 @@ module Spree
             :secret => Spree::ActiveShipping::Config[:canada_post_pws_secret],
           }
           ActiveMerchant::Shipping::CanadaPostPWS.new(canada_post_pws_options)
-	end
+        end
 
-	private
+      private
         def retrieve_rates(origin, destination, packages)
           begin
-	    options = {:customer_number => @customer_number}
+            options = {:customer_number => @customer_number}
             response = carrier.find_rates(origin, destination, packages, options)
             # turn this beastly array into a nice little hash
             rates = response.rates.collect do |rate|
@@ -52,7 +52,7 @@ module Spree
             Rails.cache.write @cache_key, error #write error to cache to prevent constant re-lookups
             raise error
           end
-	end
+        end
       end
     end
   end
