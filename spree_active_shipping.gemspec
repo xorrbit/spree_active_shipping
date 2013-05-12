@@ -4,9 +4,9 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
 
   s.name        = 'spree_active_shipping'
-  s.version     = '1.1.0'
-  s.authors     = ["Sean Schofield"]
-  s.email       = 'sean@railsdog.com'
+  s.version     = '1.1.1'
+  s.authors     = ['Sean Schofield', 'Andrew Orr']
+  s.email       = ['sean@railsdog.com', 'andrew@andreworr.ca']
   s.homepage    = 'http://github.com/spree/spree_active_shipping'
   s.summary     = 'Spree extension for providing shipping methods that wrap the active_shipping plugin.'
   s.description = 'Spree extension for providing shipping methods that wrap the active_shipping plugin.'
